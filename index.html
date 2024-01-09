@@ -9,13 +9,18 @@
 
 <body>
     <div class ="photo-container" >
-        <img src="3485097_big_c99aba85.jpg" alt="slide" id="myimage">
+        <img src="/images/3485097_big_c99aba85.jpg" alt="slide" id="myimage">
     </div>
    
     <p><a href="#" id="previous">previous</a> ---<a href="#" id="next">next</a></p>
     <script>
-        var myImages = ["3485097_big_c99aba85.jpg","inside car.jpg", "3485097_big_b02c7b6d.jpg", "start button.jpg","radio.jpg", "interior.jpg", "subaru legacy.jpg" ];
-        var currentImage = 0;
+        let myImages = ["/images/3485097_big_c99aba85.jpg",
+        "/images/inside car.jpg", 
+        "/images/3485097_big_b02c7b6d.jpg",
+        "/images/start button.jpg","radio.jpg", 
+        "/images/interior.jpg",
+        "/images/subaru legacy.jpg" ];
+        let currentImage = 0;
 
         document.getElementById('next').onclick = nextPhoto;
 
