@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div {
+    margin-top: 20px;
+}
+
+img {
+    width: 500px; /* Set a fixed width for the images */
+    height: 500px; /* Set a fixed height for the images */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 0 5px;
+    cursor: pointer;
+}

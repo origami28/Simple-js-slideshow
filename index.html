@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title> Daily trades Slide show</title>
+</head>    
+<h1>ORIGAMI MOTORS</h1>
+
+<body>
+    <div class ="photo-container" >
+        <img src="3485097_big_c99aba85.jpg" alt="slide" id="myimage">
+    </div>
+   
+    <p><a href="#" id="previous">previous</a> ---<a href="#" id="next">next</a></p>
+    <script>
+        var myImages = ["3485097_big_c99aba85.jpg","inside car.jpg", "3485097_big_b02c7b6d.jpg", "start button.jpg","radio.jpg", "interior.jpg", "subaru legacy.jpg" ];
+        var currentImage = 0;
+
+        document.getElementById('next').onclick = nextPhoto;
+
+        function nextPhoto(){
+            currentImage++;
+            if (currentImage > myImages.length-1){
+                currentImage = 0;
+            }
+            document.getElementById('myimage').src = myImages[currentImage];
+        }
+
+        document.getElementById('previous').onclick = previousPhoto;
+
+        function previousPhoto(){
+    
+            currentImage--;
+            if ( currentImage < 0 ){
+                currentImage = myImages.length-1;
+
+            }
+            document.getElementById('myimage').src = myImages[currentImage];
+        
+    }
+    </script>
+</body>
+
+</html>
